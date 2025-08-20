@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <title>NovaTech Global Electronics Limited - Product</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="js/modernizr.js"></script>
+    <style>
+        .product-img-fixed { width: 100%; height: 220px; object-fit: cover; }
+        .portfolio-btn { background: #222; color: #fff; border: none; padding: 8px 16px; border-radius: 4px; text-decoration: none; }
+        .portfolio-btn:hover { background: #007bff; color: #fff; }
+        .bg-faded { background: #f8f9fa; }
+        /* Thêm dòng này để toàn bộ body được đẩy xuống đúng chiều cao header */
+        body {
+            padding-top: 80px; /* đúng bằng chiều cao header */
+        }
+        /* Đảm bảo header luôn nằm trên cùng, không có margin-bottom thừa */
+        .site-header {
+            height: 80px;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+        /* Nếu header-nav có mb-3 thì bỏ đi hoặc sửa lại */
+        #header-nav.navbar {
+            margin-bottom: 0 !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header giữ nguyên như trang chủ -->
+    <header id="header" class="site-header header-scrolled position-fixed text-black bg-light">
+      <nav id="header-nav" class="navbar navbar-expand-lg px-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo1.png" class="logo" width="143" height="48">
+          </a>
+          <button class="navbar-toggler d-flex d-lg-none order-3 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <svg class="navbar-icon">
+              <use xlink:href="#navbar-icon"></use>
+            </svg>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel">
+            <div class="offcanvas-header px-4 pb-0">
+              <a class="navbar-brand" href="index.html">
+                <img src="images/logo1.png" class="logo" width="143" height="48">
+              </a>
+              <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdNavbar"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul id="navbar" class="navbar-nav text-uppercase justify-content-end align-items-center flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link me-4 active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link me-4" href="aboutus.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link me-4" href="product.html">Products</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link me-4" href="index.html#subscribe">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Phần sản phẩm động -->
+    <section class="container py-5">
+        <h2 class="mb-4 text-center text-uppercase">Danh sách sản phẩm</h2>
+        <!-- Tabs lọc sản phẩm -->
+        <ul class="nav nav-tabs mb-4" id="product-tabs">
+            <li class="nav-item"><a class="nav-link active" data-category="all" href="#">Tất cả</a></li>
+            <li class="nav-item"><a class="nav-link" data-category="Home Appliances" href="#">Home Appliances</a></li>
+            <li class="nav-item"><a class="nav-link" data-category="computer" href="#">Computer Accesories</a></li>
+            <li class="nav-item"><a class="nav-link" data-category="phone" href="#">Phone Accesories</a></li>
+            <!-- Thêm các loại khác nếu có -->
+        </ul>
+        <div class="row" id="product-list">
+            <!-- Sản phẩm sẽ được render ở đây -->
+        </div>
+        <nav>
+            <ul class="pagination justify-content-center mt-4" id="pagination"></ul>
+        </nav>
+    </section>
+
+    <!-- Footer giữ nguyên như trang chủ -->
+    <footer id="footer" class="overflow-hidden">
+      <div class="container">
+        <div class="row">
+          <div class="footer-top-area">
+            <div class="row d-flex flex-wrap justify-content-between">
+              <div class="col-lg-3 col-sm-6 pb-3">
+                <div class="footer-menu">
+                  <img src="images/logo1.png" alt="logo" width="253" height="68">
+                </div>
+              </div>
+              <div class="col-lg-2 col-sm-6 pb-3">
+                <div class="footer-menu text-uppercase">
+                  <h5 class="widget-title pb-2">Quick Links</h5>
+                  <ul class="menu-list list-unstyled text-uppercase">
+                    <li class="menu-item pb-2">
+                      <a href="index.html">Home</a>
+                    </li>
+                    <li class="menu-item pb-2">
+                      <a href="aboutus.html">About</a>
+                    </li>
+                    <li class="menu-item pb-2">
+                      <a href="product.html">Shop</a>
+                    </li>
+                    <li class="menu-item pb-2">
+                      <a href="index.html#contact">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 pb-3">
+                <div class="footer-menu contact-item">
+                  <h5 class="widget-title text-uppercase pb-2">Contact Us</h5>
+                  <p>Do you have any queries or suggestions? <a href="mailto:info@novatech.com">info@novatech.com</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </footer>
+
+
+    <!-- Script giữ nguyên như trang chủ -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- Thêm JS sản phẩm -->
+    <script src="js/product.js"></script>
+    <script src="js/script-product.js"></script>
+</body>
+</html>
