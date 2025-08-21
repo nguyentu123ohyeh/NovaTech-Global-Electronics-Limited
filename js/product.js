@@ -286,19 +286,6 @@ const PRODUCTS = [
     desc: "This gaming laptop cooler features nine quiet fans, five adjustable heights, and built-in USB ports for added convenience. Suitable for 12\" to 17\" laptops, it ensures optimal cooling during heavy use. Includes a phone stand for multitasking and improved workspace organization."
   },
   {
-    id: 23,
-    category: "computer",
-    name: "Webcam, Webcams for PC, Full HD 1080P Video Calling, HD Light Correction, Works with Skype, Zoom, FaceTime, Hangouts, PC/Mac/Laptop/MacBook/Tablet",
-    img: "images/computer/10.jpg",
-    imgs: [
-      "images/computer/10.jpg",
-      "images/computer/10.1.jpg",
-      "images/computer/10.2.jpg",
-      "images/computer/10.3.jpg"
-    ],
-    desc: "Experience crystal-clear video with this Full HD 1080P webcam, featuring advanced light correction for any environment. Compatible with all major platforms like Skype, Zoom, and FaceTime, it works seamlessly on PC, Mac, laptops, and tablets. Perfect for video calls, conferencing, and online learning."
-  },
-  {
     id: 24,
     category: "computer",
     name: "1080P HD Webcam with Microphone, Wide-Angle Lens, Auto Light Correction, Plug & Play USB Webcam for Laptop, Desktop, PC, Mac, Zoom, Skype, Streaming Black",
@@ -336,19 +323,6 @@ const PRODUCTS = [
       "images/house/14.3.jpg"
     ],
     desc: "This wireless Wi-Fi video doorbell camera offers two-way audio for easy communication with visitors. Featuring AI motion detection, night vision, and cloud storage, it ensures your home is secure day and night. Designed for 2.4G Wi-Fi networks, it's perfect for modern smart homes."
-  },
-  {
-    id: 27,
-    category: "Home Appliances",
-    name: "Video Doorbell 2K | 2nd Gen | Wire-Free/Wired Option, 2-Way Audio, Night Vision, Head to Toe Video View, Integrated Siren | Live Stream | Real Time Notifications |180 Deg Wide View, White",
-    img: "images/house/15.jpg",
-    imgs: [
-      "images/house/15.jpg",
-      "images/house/15.1.jpg",
-      "images/house/15.2.jpg",
-      "images/house/15.3.jpg"
-    ],
-    desc: "The 2nd Gen Video Doorbell 2K provides crystal-clear head-to-toe video with a 180-degree wide view. Choose wire-free or wired installation, enjoy two-way audio, night vision, and an integrated siren for extra security. Live streaming and real-time notifications keep you connected to your front door anytime."
   },
   {
     id: 28,
