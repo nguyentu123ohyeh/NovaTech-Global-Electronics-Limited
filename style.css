@@ -1117,3 +1117,19 @@ figure.instagram-item img.insta-image {
     min-height: 300px;
   }
 }
+
+.product-card-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 5; /* chắc chắn trên các overlay khác */
+}
+
+.product-card {
+    pointer-events: none; /* để hover effect bên trong vẫn hoạt động nhưng click đi qua link */
+}
+
+.product-card * {
+    pointer-events: auto; /* nội dung vẫn hover bình thường */
+}
